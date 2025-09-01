@@ -39,9 +39,9 @@ bash
 Copy code
 sudo apt-get install tesseract-ocr
 
-📖 Usage
+## 📖 Usage
 
-Step 1: Training and Detection
+#Step 1: Training and Detection
 Run Training and Detection.ipynb:
 
 Trains a CNN model.
@@ -50,7 +50,7 @@ Detects number plate regions in given vehicle images.
 
 Outputs cropped number plate images.
 
-Step 2: OCR Processing
+#Step 2: OCR Processing
 Run OCR based.ipynb:
 
 Takes cropped number plate images as input.
@@ -59,24 +59,25 @@ Applies Tesseract OCR.
 
 Extracts and prints the alphanumeric plate number.
 
-📊 Results
+## 📊 Results
 Detection Accuracy: ~78% for plate localization.
 
 OCR Performance: Extracted plate numbers successfully on clear images.
 
-Example:
+# Example:
 
 yaml
 Copy code
 Detected Plate: MH12AB1234
-🔮 Future Improvements
+
+## 🔮 Future Improvements
 Improve CNN accuracy with a larger dataset.
 
 Integrate YOLO or Faster R-CNN for real-time detection.
 
 Enhance OCR preprocessing for noisy/blurry images.
 
-🙌 Acknowledgements
+## 🙌 Acknowledgements
 OpenCV for image processing.
 
 Tesseract OCR for text extraction.
