@@ -16,9 +16,9 @@ This project detects vehicle license plates using a **Convolutional Neural Netwo
 
 ## 📂 Project Structure  
 
-├── Training and Detection.ipynb # Train CNN model and detect number plate region
-├── OCR based.ipynb # Apply OCR on detected plate to extract text
-├── README.md # Project documentation
+├── Training and Detection.ipynb  # Train CNN model and detect number plate region
+├── OCR based.ipynb               # Apply OCR on detected plate to extract text
+├── README.md                     # Project documentation
 
 yaml
 Copy code
