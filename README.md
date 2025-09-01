@@ -41,7 +41,7 @@ sudo apt-get install tesseract-ocr
 
 ## 📖 Usage
 
-#Step 1: Training and Detection
+# Step 1: Training and Detection
 Run Training and Detection.ipynb:
 
 Trains a CNN model.
@@ -50,7 +50,7 @@ Detects number plate regions in given vehicle images.
 
 Outputs cropped number plate images.
 
-#Step 2: OCR Processing
+# Step 2: OCR Processing
 Run OCR based.ipynb:
 
 Takes cropped number plate images as input.
@@ -83,3 +83,12 @@ OpenCV for image processing.
 Tesseract OCR for text extraction.
 
 TensorFlow/Keras for CNN model.
+
+🤝 Contributing
+
+Contributions are welcome! Feel free to open an issue or submit a pull request to improve this project.
+
+📜 License
+
+This project is licensed under the GPL-3.0 License .
+
