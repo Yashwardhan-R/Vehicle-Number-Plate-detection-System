@@ -1,58 +1,87 @@
-# Vehicle Number Plate Detection System
+Vehicle Number Plate Detection System
 
-##  Overview
-A computer vision system that detects vehicle number plates in images using a combination of **CNN** and **OCR**.  
-Developed in Python and executed within Jupyter notebooks for ease of experimentation.
+This project detects vehicle license plates using a Convolutional Neural Network (CNN) and extracts alphanumeric text using OCR (Tesseract). It is divided into two parts:
 
----
+Training & Detection → Detects the license plate region from input images.
 
-##  Key Features
-- **Image Preprocessing**: Uses OpenCV for cleaning, noise reduction, and region of interest extraction.  
-- **CNN-based Detection**: Identifies potential number plate areas using Convolutional Neural Network techniques.  
-- **Optical Character Recognition (OCR)**: Extracts the license plate text from detected regions.  
-- **Interactive Notebooks**: Includes both training and detection workflows in Jupyter notebooks.
+OCR Processing → Extracts the number from the detected license plate.
 
----
+🚀 Features
 
-##  Tech Stack
-- **Language & Development**: Python, Jupyter Notebook  
-- **Libraries**: OpenCV, Keras/TensorFlow (for CNN), Tesseract (for OCR)  
-- **Data Handling & Visualization**: NumPy, Matplotlib
+Detects number plate regions in vehicle images.
 
----
+Uses CNN for detection and localization.
 
-##  Getting Started
+Applies Tesseract OCR to extract license plate text.
 
-### 1. Clone the repository
-bash
-git clone https://github.com/Yashwardhan-R/Vehicle-Number-Plate-detection-System.git
-cd Vehicle-Number-Plate-detection-System
+End-to-end workflow from training → detection → OCR.
 
-2. Install dependencies
-bash
-Copy code
-pip install -r requirements.txt
+📂 Project Structure
+├── Training and Detection.ipynb   # Train CNN model and detect number plate region
+├── OCR based.ipynb                # Apply OCR on detected plate to extract text
+├── README.md                      # Project documentation
 
-3. Explore the notebooks
-OCR based.ipynb: Quick OCR detection on sample images
+⚙️ Requirements
 
-Training and Detection.ipynb: End-to-end pipeline from training to extraction
+Install dependencies before running:
 
-4. Run the detection
-Open the notebook in Jupyter and run the cells to preprocess images, detect plates, and extract text.
+pip install tensorflow keras opencv-python pytesseract matplotlib
 
-Example Usage
-Functionality	Description
-Plate detection	Input image → CNN detects plate region
-OCR extraction	Crop region → Tesseract retrieves text
-Visualization	Detected bounding box and extracted text displayed
 
-Include your own test images (e.g., image1.jpg) to evaluate performance.
+Also, install Tesseract OCR on your system:
 
-Results
-Demonstrated detection and text extraction capability across sample images.
+Windows: Download Tesseract
 
-Provided visual confirmation through annotated image outputs.
+Linux/macOS:
+
+sudo apt-get install tesseract-ocr
+
+📖 Usage
+Step 1: Training and Detection
+
+Run Training and Detection.ipynb:
+
+Trains a CNN model.
+
+Detects number plate regions in given vehicle images.
+
+Outputs cropped number plate images.
+
+Step 2: OCR Processing
+
+Run OCR based.ipynb:
+
+Takes cropped number plate images as input.
+
+Applies Tesseract OCR.
+
+Extracts and prints the alphanumeric plate number.
+
+📊 Results
+
+Detection Accuracy: ~78% for plate localization.
+
+OCR Performance: Extracted plate numbers successfully on clear images.
+
+Example:
+
+Detected Plate: MH12AB1234
+
+🔮 Future Improvements
+
+Improve CNN accuracy with a larger dataset.
+
+Integrate YOLO or Faster R-CNN for real-time detection.
+
+Enhance OCR preprocessing for noisy/blurry images.
+
+🙌 Acknowledgements
+
+OpenCV for image processing.
+
+Tesseract OCR for text extraction.
+
+TensorFlow/Keras for CNN model.
 
 Contributing
 Feel free to submit issues or pull requests — improvements and optimizations are welcome!
